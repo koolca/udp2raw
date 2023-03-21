@@ -45,14 +45,14 @@ const u32_t conn_clear_interval = 1000;  // ms
 
 const i32_t max_fail_time = 0;  // disable
 
-const u32_t heartbeat_interval = 29000;  // ms
+const u32_t heartbeat_interval = 28000;  // ms
 
 const u32_t timer_interval = 400;  // ms. this should be smaller than heartbeat_interval and retry interval;
 
 const uint32_t conv_timeout = 180000;  // ms. 120 second
 // const u32_t conv_timeout=30000; //for test
 
-const u32_t client_conn_timeout = 10000;                              // ms.
+const u32_t client_conn_timeout = 30000;                              // ms.
 const u32_t client_conn_uplink_timeout = client_conn_timeout + 2000;  // ms
 
 const uint32_t server_conn_timeout = conv_timeout + 60000;  // ms. this should be 60s+ longer than conv_timeout,so that conv_manager can destruct convs gradually,to avoid latency glicth
